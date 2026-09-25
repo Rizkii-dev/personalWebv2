@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name | Backend Engineer</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Prism.js for clean syntax highlighting -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+</head>
+<body>
+
+  <header>
+    <h1>Your Name</h1>
+    <p>Backend & Systems Developer | Java • C++ • Python</p>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="projects">
+      <h2>Featured Projects</h2>
+      
+      <article class="project-card">
+        <h3>High-Performance Concurrent Search Engine</h3>
+        <p class="tech-stack"><strong>Tech:</strong> C++, Multithreading, POSIX Sockets</p>
+        <p class="description">
+          Built an in-memory indexing engine achieving sub-10ms lookup times across 100k+ documents using custom lock-free data structures.
+        </p>
+        
+        <!-- Highlight core backend logic directly -->
+        <pre><code class="language-cpp">// Key Logic: Lock-free queue processing snippet
+template <typename T>
+class LockFreeQueue {
+    // Structural implementation highlight
+};</code></pre>
+
+        <div class="project-links">
+          <a href="https://github.com/yourusername/project/blob/main/README.md" target="_blank">System Architecture (README)</a>
+          <a href="https://github.com/yourusername/project/blob/main/src/core.cpp" target="_blank">Core Logic Source</a>
+        </div>
+      </article>
+    </section>
+
+    <section id="contact">
+      <h2>Get In Touch</h2>
+      <!-- Serverless Form Endpoint -->
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-cpp.min.js"></script>
+</body>
+</html>
